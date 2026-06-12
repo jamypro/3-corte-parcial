@@ -61,7 +61,7 @@ const validaciones = {
   confirmPassword: (v, pwd) => v === pwd,
 };
 
-const mensajesError = {
+const mensajesErrores = {
   nombre: "Mínimo 3 caracteres, solo letras y espacios.",
   email: "Ingresa un correo electrónico válido.",
   telefono: " Debe contener exactamente 10 dígitos numéricos.",
@@ -77,7 +77,7 @@ function validarCampo(id, valor, extra) {
     extra !== undefined
       ? validaciones[id](valor, extra)
       : validaciones[id](valor);
-  errorDiv.textContent = valido ? "" : mensajesError[id];
+  errorDiv.textContent = valido ? "" : mensajesErrores[id];
   return valido;
 }
 
