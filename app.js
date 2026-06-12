@@ -62,11 +62,11 @@ const validaciones = {
 };
 
 const mensajesError = {
-  nombre: "❌ Mínimo 3 caracteres, solo letras y espacios.",
-  email: "❌ Ingresa un correo electrónico válido.",
-  telefono: "❌ Debe contener exactamente 10 dígitos numéricos.",
-  password: "❌ La contraseña debe tener al menos 6 caracteres.",
-  confirmPassword: "❌ Las contraseñas no coinciden.",
+  nombre: "Mínimo 3 caracteres, solo letras y espacios.",
+  email: "Ingresa un correo electrónico válido.",
+  telefono: " Debe contener exactamente 10 dígitos numéricos.",
+  password: "La contraseña debe tener al menos 6 caracteres.",
+  confirmPassword: "Las contraseñas no coinciden.",
 };
 
 function validarCampo(id, valor, extra) {
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
           document.getElementById("registroModal"),
         );
         if (modal) modal.hide();
-        window.location.href = "usuarios.html";
+        window.location.href = "tabla.html";
       }
     });
   }
